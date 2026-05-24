@@ -578,30 +578,30 @@
                 <div class="input-group"><label>Secure Password</label><input type="password" id="login-pass" placeholder="••••••••" required></div>
 
                 <button type="submit" class="btn-main" id="login-submit-btn">
-                    <span id="btn-text-label">LOG IN PORTAL</span>
+                    <span id="btn-text-label">LOG IN</span>
                     <i class="fa-solid fa-circle-notch fa-spin" id="login-btn-spinner" style="display: none; font-size: 18px;"></i>
                 </button>
             </form>
-            <div class="toggle-auth" onclick="toggleAuth('register')">New explorer? <span>Create Account</span></div>
+            <div class="toggle-auth" onclick="toggleAuth('register')">New?<span>Create Account</span></div>
         </div>
 
         <div class="auth-card" id="register-card" style="display: none;">
             <div class="branding-header"><img src="https://dl.dropboxusercontent.com/scl/fi/y7m9c1ay7xm03oo9duaor/7pluslogo.png?rlkey=609mvksessopao9ecyt3676cj" class="branding-logo" alt="7Plus Logo"></div>
             <h1 style="text-align:center; margin-bottom:20px; font-family:'Fredoka';">CREATE ACCOUNT</h1>
             <form onsubmit="executeClientRegistration(event)">
-                <div class="input-group"><label>Security Key (SZH131124)</label><input type="text" id="reg-key" placeholder="Enter security key..." required></div>
+                <div class="input-group"><label>Security Key</label><input type="text" id="reg-key" placeholder="Enter security key..." required></div>
                 <div class="input-group"><label>Choose Player ID</label><input type="text" id="reg-user" placeholder="Enter Username..." required></div>
                 <div class="input-group"><label>Set Secure Password</label><input type="password" id="reg-pass" placeholder="••••••••" required></div>
                 <div class="input-group">
                     <label>Select Pass Package Variant</label>
                     <select id="reg-tier" style="width: 100%; padding: 14px; border-radius: 14px; background: rgba(0,0,0,0.4); color: white; border: 1px solid var(--glass-border);">
-                        <option value="Gold Star">Premium Variant Package (Gold Star 2X)</option>
-                        <option value="Stella Lite">Lite Variant Package (Silver Standard)</option>
+                        <option value="Gold Star">Premium Package (Gold Star 2X)</option>
+                        <option value="Stella Lite">LitE Package (Silver Standard)</option>
                     </select>
                 </div>
                 <button type="submit" class="btn-main">ACTIVATE ACCOUNT</button>
             </form>
-            <div class="toggle-auth" onclick="toggleAuth('login')">Already member? <span>Log In</span></div>
+            <div class="toggle-auth" onclick="toggleAuth('login')">Already member?<span>Log In</span></div>
         </div>
     </section>
 
@@ -629,7 +629,7 @@
         <div class="main-container">
             <div class="mission-hub-grid">
                 <div class="inventory-card">
-                    <div class="inventory-title"><i class="fa-solid fa-vault"></i> Unused Rewards Inventory</div>
+                    <div class="inventory-title"><i class="fa-solid fa-vault"></i>အသုံးမပြုရသေးသော လက်ဆောင်များ</div>
                     <div class="inventory-badges">
                         <div class="inv-badge-item" style="color:var(--star-gold);"><i class="fa-solid fa-clone"></i> Cards: <span id="inv-cards-count">0</span></div>
                         <div class="inv-badge-item" style="color:#00ffff;"><i class="fa-solid fa-rotate"></i> Spin: <span id="inv-spins-count">0</span></div>
@@ -637,7 +637,7 @@
                     </div>
                 </div>
                 <div class="controls-card">
-                    <button class="btn-main" style="margin:0; padding:12px;" onclick="triggerDailyLoginClaim()">Daily Gifts (10:30AM Reset)</button>
+                    <button class="btn-main" style="margin:0; padding:12px;" onclick="triggerDailyLoginClaim()">Daily Gifts</button>
                     <button class="btn-main" style="margin:0; padding:12px; background:linear-gradient(135deg, #2563eb, #1d4ed8); color:white;" onclick="redirectToTelegramAdmin()"><i class="fa-brands fa-telegram"></i> Stella Admin Contact</button>
                 </div>
             </div>
